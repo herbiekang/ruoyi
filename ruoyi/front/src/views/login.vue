@@ -82,6 +82,14 @@ export default {
 
     }
   },
+  watch: {
+    $route: {
+      handler: function(route) {
+        this.redirect = route.query && route.query.redirect;
+      },
+      immediate: true
+    }
+  },
   methods:{
 
       handleLogin(){
@@ -106,18 +114,17 @@ export default {
 </script>
 
 <style rel="stylesheet/scss" lang="scss">
-.hh{
 
-  align-content: center;
-}
 .login {
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
   justify-content: center;
   align-items: center;
+align-content: center;
   height: 100%;
   background-image: url("../assets/images/login-background.jpg");
   background-size: cover;
-  background-position: center;
 }
 .title {
   margin: 0px auto 30px auto;
@@ -129,6 +136,7 @@ export default {
   border-radius: 8px;
   background: #ffffff;
   width: 400px;
+  align-self: center;
   padding: 25px 25px 25px 25px;
   .el-input {
     height: 38px;
