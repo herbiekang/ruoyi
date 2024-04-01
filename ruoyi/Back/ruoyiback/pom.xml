@@ -175,6 +175,8 @@
     <modules>
         <module>ruoyi-common</module>
         <module>ruoyi-framework</module>
+        <module>ruoyi-system</module>
+        <module>ruoyi-admin</module>
     </modules>
 
 
