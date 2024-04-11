@@ -4,7 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="557e6c8e-028e-4046-9711-32a1c8df9274" name="更改" comment="login is ok!" />
+    <list default="true" id="557e6c8e-028e-4046-9711-32a1c8df9274" name="更改" comment="login is ok!">
+      <change afterPath="$PROJECT_DIR$/ruoyi-admin/src/test/java/com/ruoyi/admin/test/test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-framework/src/test/java/com/ruoyi/framework/test/testf1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ruoyi-system/src/test/java/com/ruoyi/system/test1/test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruoyi-common/src/main/java/com/ruoyi/common/core/domain/AjaxResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-common/src/main/java/com/ruoyi/common/core/domain/AjaxResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/layout/AppMain.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/layout/components/AppMain.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/layout/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/layout/components/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/layout/SideBar/SideItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/layout/components/SideBar/SideItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/layout/SideBar/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/layout/components/SideBar/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/layout/SideBar/item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/layout/components/SideBar/item.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/layout/SideBar/log.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/layout/components/SideBar/log.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/layout/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/layout/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/store/modules/permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/store/modules/permission.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/store/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/store/modules/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/front/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/front/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/front/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/front/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/front/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/front/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/front/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/front/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/front/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/front/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/front/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/front/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test/front/vue.config.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +112,23 @@
       <recent name="com.ruoyi.system.mapper" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.RuoYiApplication">
+    <configuration name="test1.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ruoyi-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ruoyi.admin.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ruoyi.admin.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ruoyi.admin.test.test1" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RuoYiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="ruoyi-admin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoyi.RuoYiApplication" />
@@ -97,6 +144,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.test1.test1" />
         <item itemvalue="Spring Boot.RuoYiApplication" />
       </list>
     </recent_temporary>
@@ -115,6 +163,8 @@
       <workItem from="1712019233734" duration="28437000" />
       <workItem from="1712104659141" duration="2207000" />
       <workItem from="1712109316394" duration="4499000" />
+      <workItem from="1712744057473" duration="4320000" />
+      <workItem from="1712795417470" duration="4011000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />

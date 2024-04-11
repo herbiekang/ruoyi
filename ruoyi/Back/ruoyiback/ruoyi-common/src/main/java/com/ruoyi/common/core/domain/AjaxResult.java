@@ -38,7 +38,7 @@ public class AjaxResult extends HashMap<String, Object>
      * @param code 状态码
      * @param msg 返回内容
      */
-    //todo ?
+
     public AjaxResult(int code, String msg)
     {
         super.put(CODE_TAG, code);

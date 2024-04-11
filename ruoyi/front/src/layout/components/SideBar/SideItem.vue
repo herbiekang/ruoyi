@@ -1,16 +1,15 @@
 <template>
-  <div>
+  <div v-if="!item.hidden">
     <ul>
-<h5>item</h5>
+      <items></items>
+      <side-item
+        v-for="menu in item.children"
+        :item="menu"
+        :menus="menu.children"
+      >
 
-         <side-item
-             v-for="menu in menus"
-             :menus="menu.children"
-         >
 
-
-         </side-item>
-
+      </side-item>
 
 
     </ul>

@@ -16,10 +16,10 @@
 </template>
 
 <script >
-import AppMain from "@/layout/AppMain.vue";
-import Navbar from "@/layout/Navbar.vue";
-import Sidebar from "@/layout/SideBar/index.vue";
-import SideBar from "@/layout/SideBar/index.vue";
+import AppMain from "@/layout/components/AppMain.vue";
+import Navbar from "@/layout/components/Navbar.vue";
+import Sidebar from "@/layout/components/SideBar/index.vue";
+import SideBar from "@/layout/components/SideBar/index.vue";
 export default {
   name: 'Layout',
   components: {

@@ -1,13 +1,15 @@
 <template>
   <div>
+    <h5>siderbar</h5>
     <el-scrollbar >
       <el-menu>
         <SideItem
-          v-for="(route, index) in sidebarRouters"
+          v-for="(route, index) in menus"
           :key ="route"
           :item ="route"
           :base-path ="route.path"
         />
+
       </el-menu>
     </el-scrollbar>
   </div>
@@ -15,7 +17,7 @@
 
 <script setup>
 
-import SideItem from "@/layout/SideBar/SideItem.vue";
+import SideItem from "@/layout/components/SideBar/SideItem.vue";
 import { mapGetters, mapState } from "vuex";
 import menu from "@riophae/vue-treeselect/src/components/Menu.vue";
 export default {
