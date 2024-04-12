@@ -10,7 +10,7 @@ export const constantRoutes = [
         component: Layout,
     },
     {
-        path: '',
+        path: '/',
         component: () => import('@/views/login.vue'),
     }
 ]

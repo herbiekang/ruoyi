@@ -25,8 +25,7 @@ export default {
   components: {
     SideBar,
     AppMain,
-    Navbar,
-    Sidebar
+    Navbar
   }
 }
 

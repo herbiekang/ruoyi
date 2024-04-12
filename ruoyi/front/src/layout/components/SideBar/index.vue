@@ -1,13 +1,17 @@
 <template>
   <div>
-    <h5>siderbar</h5>
+    <h5>sidebarRouters</h5>
     <el-scrollbar >
-      <el-menu>
-        <SideItem
-          v-for="(route, index) in menus"
-          :key ="route"
-          :item ="route"
-          :base-path ="route.path"
+      <el-menu
+        :default-active="activeMenu"
+        :collapse-transition="false"
+        mode="vertical"
+      >
+        <side-item
+          v-for="(route, index) in sidebarRouters"
+          :key="route.path  + index"
+          :item="route"
+          :base-path="route.path"
         />
 
       </el-menu>
@@ -19,26 +23,29 @@
 
 import SideItem from "@/layout/components/SideBar/SideItem.vue";
 import { mapGetters, mapState } from "vuex";
-import menu from "@riophae/vue-treeselect/src/components/Menu.vue";
+import variables from "@/assets/styles/variables.scss";
 export default {
-  name: 'SideBar',
-  components: {
+  components: { SideItem},
+  computed: {
     ...mapState(["settings"]),
-    ...mapGetters(["sidebarRouters","sidebar"]),
-    SideItem,
-  },
-  data() {
-    return {
-      menus: [
-        { id: 1, title: '一级菜单 1', href: '#' },
-        { id: 2, title: '一级菜单 2', href: '#', children: [
-            { id: 21, title: '二级菜单 1', href: '#' },
-            { id: 22, title: '二级菜单 2', href: '#', children: [
-                { id: 221, title: '三级菜单 1', href: '#' }
-              ]}
-          ]}
-      ]
+    ...mapGetters(["sidebarRouters", "sidebar"]),
+    activeMenu() {
+      const route = this.$route;
+      const { meta, path } = route;
+      // if set path, the sidebar will highlight the path you set
+      if (meta.activeMenu) {
+        return meta.activeMenu;
+      }
+      return path;
+    },
+
+    variables() {
+      return variables;
+    },
+    isCollapse() {
+      return !this.sidebar.opened;
     }
+
   }
 
 }
