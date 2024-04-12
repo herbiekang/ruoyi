@@ -1,30 +1,15 @@
 <template>
 
   <div>
-    <h5>item</h5>
-    <template
-      v-if="hasOneShowingChild(item.children,item) && (!onlyOneChild.children||onlyOneChild.noShowingChildren)&&!item.alwaysShow">
-      <AppLink v-if="onlyOneChild.meta" :to="resolvePath(onlyOneChild.path, onlyOneChild.query)">
-        <el-menu-item :index="resolvePath(onlyOneChild.path)" :class="{'submenu-title-noDropdown':!isNest}">
-          <items :icon="onlyOneChild.meta.icon||(item.meta&&item.meta.icon)" :title="onlyOneChild.meta.title">
-          </items>
-        </el-menu-item>
-      </AppLink>
-    </template>
 
-    <el-submenu v-else ref="subMenu" :index="resolvePath(item.path)" popper-append-to-body>
-      <template slot="title">
-        <item v-if="item.meta" :icon="item.meta && item.meta.icon" :title="item.meta.title" />
-      </template>
-      <side-item v-for="(child, index) in item.children"
-                 :key="child.path + index"
-                 :is-nest="true"
-                 :item="child"
-                 :base-path="resolvePath(child.path)"
-                 class="nest-menu"
-      >
-      </side-item>
-    </el-submenu>
+    <side-item v-for="(child, index) in item.children"
+               :key="child.path + index"
+               :is-nest="true"
+               :item="child"
+              >
+
+    </side-item>
+
   </div>
 </template>
 

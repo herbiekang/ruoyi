@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h5>sidebarRouters</h5>
+    <h5>{{sidebarRouters}}</h5>
     <el-scrollbar >
       <el-menu
         :default-active="activeMenu"
