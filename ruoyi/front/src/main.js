@@ -10,9 +10,10 @@ import './assets/icons' // icon
 import 'element-ui/lib/theme-chalk/index.css'
 import test1 from './views/test1.vue'
 import './permission';
-
+import plugins from './plugins' // plugins
 Vue.config.productionTip = false
 Vue.use(ElementUI);
+Vue.use(plugins)
 
 Vue.component('test1', test1);
 

@@ -1,9 +1,9 @@
 import request from '@/utils/request'
 
-// 获取路由
-export const getRouters = () => {
+// 获取服务信息
+export function getServer() {
   return request({
-    url: '/getRouters',
+    url: '/monitor/server',
     method: 'get'
   })
 }
